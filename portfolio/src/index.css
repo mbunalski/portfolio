@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+
+@layer base{
+    body {
+        @apply font-[Kanit];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+}
