@@ -1,9 +1,10 @@
 
+import Navigationbar from "./components/Navigationbar.jsx";
 
 function App() {
   return (
     <div>
-      <h1 class="text-xl font-bold">wamp1</h1>
+      <Navigationbar />
       
     </div>
   );
