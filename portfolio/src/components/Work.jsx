@@ -5,7 +5,7 @@ import Empty from '../assets/suchempty.jpg'
 const Work = () => {
   return (
     <div name='work' className='bg-[#0a192f] w-full md:h-screen text-gray-300'>
-        {/*Container*/}
+        
         <div clasName='max-w-[1000px] mx-auto px-4 flex flex-col justify-center h-full w-full'>
 
             <div>
@@ -13,21 +13,24 @@ const Work = () => {
                 <p className=' py-4 '>// Some of my recent work</p>
             </div>
 
-            <div style={{backgroundImage: `url(${Empty})`}}
-            className= 'grid sm:grid-cls-2 md:grid-cols-3 gap-4'>
-                <div className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+        {/*Container*/}
+            <div className= 'grid sm:grid-cls-2 md:grid-cols-3 gap-4'>
 
-                    {/*hover efects*/}
-                    <div>
-                        <span>
+            {/*Grid Item*/}
+                <div style={{backgroundImage: `url(${Empty})`}}
+                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
 
+                {/*hover efects*/}
+                    <div className='opacity-0 group-hover:opacity-100'>
+                        <span clasName='text-2xl font-bold text-white tracking-wider'>
+                            React JS Application
                         </span>
-                        <div>
+                        <div className='pt-8 text-center'>
                             <a href="/">
-                                <button></button>
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
                             <a href="/">
-                                <button></button>
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                             
                         </div>
