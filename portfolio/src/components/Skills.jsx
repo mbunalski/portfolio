@@ -1,7 +1,7 @@
 import React from 'react'
 
 import GitHub from '../assets/github.png'
-import SQL from '../assets/sql.png'
+import Selenium from '../assets/selenium.png'
 import JavaScript from '../assets/javascript.png'
 import ReactImg from '../assets/react.png'
 import Java from '../assets/java.png'
@@ -39,8 +39,8 @@ const Skills = () => {
             <p className='my-4'>React</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='pt-7 w-20 mx-auto'  src={SQL} alt="SQL Icon" />
-            <p className='my-4'>SQL</p>
+            <img className='w-20 mx-auto'  src={Selenium} alt="Selenium Icon" />
+            <p className='my-4'>Selenium</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
             <img className='w-20 mx-auto'  src={GitHub} alt="GitHub Icon" />
