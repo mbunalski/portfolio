@@ -1,5 +1,6 @@
 import React from 'react'
 import Empty from '../assets/suchempty.jpg'
+import ComingSoon from '../assets/comingsoon.jpg'
 
 
 const Work = () => {
@@ -17,7 +18,7 @@ const Work = () => {
             <div className= 'grid sm:grid-cls-2 md:grid-cols-3 gap-4'>
 
             {/*Grid Item*/}
-                <div style={{backgroundImage: `url(${Empty})`}}
+                <div style={{backgroundImage: `url(${ComingSoon})`}}
                  className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
 
                 {/*hover efects*/}
@@ -36,6 +37,113 @@ const Work = () => {
                         </div>
                     </div>
                 </div>
+
+                {/*Grid Item*/}
+                <div style={{backgroundImage: `url(${ComingSoon})`}}
+                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+
+                {/*hover efects*/}
+                    <div className='opacity-0 group-hover:opacity-100'>
+                        <span clasName='text-2xl font-bold text-white tracking-wider'>
+                            React JS Application
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="/">
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href="/">
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                            {/*Grid Item*/}
+                            <div style={{backgroundImage: `url(${ComingSoon})`}}
+                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+
+                {/*hover efects*/}
+                    <div className='opacity-0 group-hover:opacity-100'>
+                        <span clasName='text-2xl font-bold text-white tracking-wider'>
+                            React JS Application
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="/">
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href="/">
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                {/*Grid Item*/}
+                <div style={{backgroundImage: `url(${ComingSoon})`}}
+                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+
+                {/*hover efects*/}
+                    <div className='opacity-0 group-hover:opacity-100'>
+                        <span clasName='text-2xl font-bold text-white tracking-wider'>
+                            React JS Application
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="/">
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href="/">
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                            {/*Grid Item*/}
+                            <div style={{backgroundImage: `url(${ComingSoon})`}}
+                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+
+                {/*hover efects*/}
+                    <div className='opacity-0 group-hover:opacity-100'>
+                        <span clasName='text-2xl font-bold text-white tracking-wider'>
+                            React JS Application
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="/">
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href="/">
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                {/*Grid Item*/}
+                <div style={{backgroundImage: `url(${ComingSoon})`}}
+                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+
+                {/*hover efects*/}
+                    <div className='opacity-0 group-hover:opacity-100'>
+                        <span clasName='text-2xl font-bold text-white tracking-wider'>
+                            React JS Application
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href="/">
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href="/">
+                                <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
 
             </div>
 
