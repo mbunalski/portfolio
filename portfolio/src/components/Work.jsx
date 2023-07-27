@@ -9,7 +9,7 @@ const Work = () => {
         
         <div clasName='max-w-[1000px] mx-auto px-4 flex flex-col justify-center h-full w-full'>
 
-            <div className='px-20'>
+            <div className='sm:px-20 px-5'>
                 <p className='text-4xl border-[#5cf300] font-bold inline border-b-4 '>Work</p>
                 <p className=' py-4 '>// Some of my recent work</p>
             </div>
