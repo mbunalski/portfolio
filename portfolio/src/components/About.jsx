@@ -15,7 +15,7 @@ export const About = () => {
           <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
             {/*Container*/}
             <div className='sm:text-right text-4xl font-bold'>
-              <p>Hi. I'm Michael Bunalski. Please take a look around a reach out with any questions.</p>
+              <p>Hi. I'm Michael Bunalski. Please take a look around and reach out with any questions.</p>
             </div>
             <div>
               <p>I am passionate about building excellent software that improves
