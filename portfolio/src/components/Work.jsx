@@ -24,10 +24,10 @@ const Work = () => {
                 {/*hover efects*/}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span clasName='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
+                            URL Shortener
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a href="/url">
                                 <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
                             <a href="/">
@@ -45,7 +45,7 @@ const Work = () => {
                 {/*hover efects*/}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span clasName='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
+                            TBD
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="/">
@@ -66,7 +66,7 @@ const Work = () => {
                 {/*hover efects*/}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span clasName='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
+                            TBD
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="/">
@@ -87,7 +87,7 @@ const Work = () => {
                 {/*hover efects*/}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span clasName='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
+                            TBD 
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="/">
@@ -108,7 +108,7 @@ const Work = () => {
                 {/*hover efects*/}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span clasName='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
+                            TBD
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="/">
@@ -129,7 +129,7 @@ const Work = () => {
                 {/*hover efects*/}
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span clasName='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
+                            TBD
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="/">
