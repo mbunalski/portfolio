@@ -23,3 +23,5 @@ yarn-error.log*
 
 /portfolio/node_modules
 /node_modules
+portfolio/node_modules
+node_modules
