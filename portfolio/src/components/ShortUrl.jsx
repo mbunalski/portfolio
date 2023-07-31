@@ -10,11 +10,11 @@ const ShortUrl = () => {
         
         <div className='w-full h-screen bg-[#0a192f] text-black'>
             <div className='flex flex-col justify-center items-center w-full h-full'>
-                <div className= ' bg bg-pink-200 w-[500px] h-[500px] flex flex-col justify-center items-center'>
+                <div className= 'rounded shadow-md shadow-[#040c16] bg-teal-200 w-[500px] h-[500px] flex flex-col justify-center items-center'>
                 
-                <Form>
+                <Form className='font-bold'>
                     <Form.Group className="mb-5" controlId="formBasicEmail">
-                        <Form.Label className= 'px-2'>Enter a Long URL</Form.Label>
+                        <Form.Label className= 'px-2 '>Enter a Long URL</Form.Label>
                         <Form.Control type="email" placeholder="Enter URL"/>
                     </Form.Group>
 
