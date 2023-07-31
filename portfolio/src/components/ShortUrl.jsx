@@ -1,11 +1,42 @@
 import React from 'react'
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { db } from "../utils/firebase";
+import { getDatabase, ref, set, child, get  } from "firebase/database";
+
 
 
 const ShortUrl = () => {
+
+    const [long, setLong] = useState();
+    const [short, setShort] = useState();
+ 
+    // Push Function
+    const Push = () => {
+        
+        set(ref(db,'user'),{
+            long: long,
+            short: short,
+        }).catch(alert);
+    }
+
+    const dbRef = ref(getDatabase());
+    const Pull = () => {
+    
+    get(child(dbRef, `user`)).then((snapshot) => {
+        if (snapshot.exists()) {
+        console.log(snapshot.val());
+        } else {
+        console.log("No data available");
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+    }   
+
     return (
         
         <div className='w-full h-screen bg-[#0a192f] text-black'>
@@ -15,16 +46,22 @@ const ShortUrl = () => {
                 <Form className='font-bold'>
                     <Form.Group className="mb-5" controlId="formBasicEmail">
                         <Form.Label className= 'px-2 '>Enter a Long URL</Form.Label>
-                        <Form.Control type="email" placeholder="Enter URL"/>
+                        <Form.Control type="email" placeholder="Enter URL" value={long}
+                    onChange={(e) => setLong(e.target.value)}/>
                     </Form.Group>
 
-                    <Button className="mb-5 bg-blue-600" variant="primary" type="submit">
-                        Shorten
+                    <Button className="mb-5 bg-blue-600" variant="primary" type="button" onClick={Push}>
+                        Post
+                    </Button>
+
+                    <Button className="mb-5 bg-blue-600" variant="primary" type="button" onClick={Pull}>
+                        Read/Write
                     </Button>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label className= 'px-2' >Your Short URL</Form.Label>
-                        <Form.Control type="" placeholder="(eg. 3h6fsB)"/>
+                        <Form.Control type="" placeholder="(eg. 3h6fsB)" value={short}
+                    onChange={(e) => setShort(e.target.value)}/>
                     </Form.Group>
 
                     
