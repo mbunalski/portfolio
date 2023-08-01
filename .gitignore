@@ -1,2 +1,6 @@
 /portfolio/node_modules
 portfolio/node_modules
+server/url_app/venv
+server/url_app/serviceAccountKey.json
+/server/url_app/venv
+/server/url_app/serviceAccountKey.json
