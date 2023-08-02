@@ -17,18 +17,18 @@ const ShortUrl = () => {
 
 
     const dbRef = ref(getDatabase());
-    const Pull = () => {
+    // const Pull = () => {
     
-    get(child(dbRef, `urlapp`)).then((snapshot) => {
-        if (snapshot.exists()) {
-        console.log(snapshot.val());
-        } else {
-        console.log("No data available");
-        }
-    }).catch((error) => {
-        console.error(error);
-    });
-    }   
+    // get(child(dbRef, `urlapp`)).then((snapshot) => {
+    //     if (snapshot.exists()) {
+    //     console.log(snapshot.val());
+    //     } else {
+    //     console.log("No data available");
+    //     }
+    // }).catch((error) => {
+    //     console.error(error);
+    // });
+    // }   
 
     // Push Function
     const Push = () => {
@@ -41,8 +41,8 @@ const ShortUrl = () => {
                     dict[child.key] = child.val();
                     
                 }); 
-                console.log('l1')
-                console.log(dict)
+                // console.log('l1')
+                // console.log(dict)
             } else {
                 console.log("No data available");
             }
@@ -50,8 +50,8 @@ const ShortUrl = () => {
             console.error(error);
         }).then(() => {
             dict[[short]] = long;
-            console.log('l2')
-            console.log(dict)
+            // console.log('l2')
+            // console.log(dict)
             set(ref(db,'urlapp'),dict).catch(alert);
         }
         );
@@ -77,7 +77,7 @@ const ShortUrl = () => {
                         Post
                     </Button>
 
-                    <Button className="mb-5 bg-blue-600" variant="primary" type="button" onClick={Pull}>
+                    <Button className="mb-5 bg-blue-600" variant="primary" type="button" >
                         Read/Write
                     </Button>
 
