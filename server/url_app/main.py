@@ -37,3 +37,7 @@ if 'abc def' in snap.keys():
     print('Wammy1')
 else:
     print('o nooooo')
+
+snap['abc def'] = 'www.justbunstuff.com'
+
+ref.set(snap)
