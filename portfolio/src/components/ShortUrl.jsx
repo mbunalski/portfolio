@@ -14,19 +14,12 @@ const ShortUrl = () => {
     const [long, setLong] = useState();
     const [short, setShort] = useState();
  
-    // Push Function
-    const Push = () => {
-        
-        set(ref(db,'user'),{
-            long: long,
-            short: short,
-        }).catch(alert);
-    }
+
 
     const dbRef = ref(getDatabase());
     const Pull = () => {
     
-    get(child(dbRef, `user`)).then((snapshot) => {
+    get(child(dbRef, `urlapp`)).then((snapshot) => {
         if (snapshot.exists()) {
         console.log(snapshot.val());
         } else {
@@ -36,6 +29,29 @@ const ShortUrl = () => {
         console.error(error);
     });
     }   
+
+    // Push Function
+    const Push = () => {
+        let snap;
+        get(child(dbRef, `urlapp`)).then((snapshot) => {
+            if (snapshot.exists()) {
+                snap = snapshot.val();
+                console.log(snap);
+                snapshot.forEach((child) => {
+                    console.log(child.key, child.val());
+                }); 
+            
+            } else {
+                console.log("No data available");
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+        
+        // var test = {[short]: long,
+        //     [long]: short}
+        set(ref(db,'urlapp'),snap).catch(alert);
+    }
 
     return (
         
