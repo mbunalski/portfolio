@@ -32,25 +32,32 @@ const ShortUrl = () => {
 
     // Push Function
     const Push = () => {
+        var dict = {}
         let snap;
         get(child(dbRef, `urlapp`)).then((snapshot) => {
             if (snapshot.exists()) {
-                snap = snapshot.val();
-                console.log(snap);
+                
                 snapshot.forEach((child) => {
-                    console.log(child.key, child.val());
+                    dict[child.key] = child.val();
+                    
                 }); 
-            
+                console.log('l1')
+                console.log(dict)
             } else {
                 console.log("No data available");
             }
         }).catch((error) => {
             console.error(error);
-        });
+        }).then(() => {
+            dict[[short]] = long;
+            console.log('l2')
+            console.log(dict)
+            set(ref(db,'urlapp'),dict).catch(alert);
+        }
+        );
         
-        // var test = {[short]: long,
-        //     [long]: short}
-        set(ref(db,'urlapp'),snap).catch(alert);
+        
+        
     }
 
     return (
