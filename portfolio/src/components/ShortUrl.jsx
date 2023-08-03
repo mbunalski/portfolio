@@ -73,19 +73,18 @@ const ShortUrl = () => {
                     onChange={(e) => setLong(e.target.value)}/>
                     </Form.Group>
 
-                    <Button className="mb-5 bg-blue-600" variant="primary" type="button" onClick={Push}>
-                        Post
-                    </Button>
-
-                    <Button className="mb-5 bg-blue-600" variant="primary" type="button" >
-                        Read/Write
-                    </Button>
-
+                
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label className= 'px-2' >Your Short URL</Form.Label>
-                        <Form.Control type="" placeholder="(eg. 3h6fsB)" value={short}
-                    onChange={(e) => setShort(e.target.value)}/>
+                        <div className='flex '><span className="input-group-text bg-gray-500">minilinkit.com/</span>
+                        <Form.Control type="" placeholder="eg. 3h6fsB (Optional)" value={short}
+                    onChange={(e) => setShort(e.target.value)}/></div>
+                        
                     </Form.Group>
+
+                    <Button className="mb-5 bg-blue-600" variant="primary" type="button" onClick={Push}>
+                        Copy URL
+                    </Button>
 
                     
                 </Form>
