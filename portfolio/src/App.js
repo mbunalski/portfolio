@@ -29,7 +29,6 @@ const dbRef = ref(getDatabase());
 
 const check = () => {
     var dict = {}
-    let snap;
     get(child(dbRef, `urlapp`)).then((snapshot) => {
         if (snapshot.exists()) {
             
@@ -62,8 +61,7 @@ const check = () => {
             
             return true
         }
-    }
-    );
+    });
     
     
     

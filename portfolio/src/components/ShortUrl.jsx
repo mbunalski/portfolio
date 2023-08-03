@@ -31,6 +31,11 @@ const ShortUrl = () => {
     // }   
 
     // Push Function
+
+
+    const triggerVariable = false
+
+
     const Push = () => {
         var dict = {}
         let snap;
@@ -73,13 +78,14 @@ const ShortUrl = () => {
                     onChange={(e) => setLong(e.target.value)}/>
                     </Form.Group>
 
-                
+                    
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label className= 'px-2' >Your Short URL</Form.Label>
+                        <div><Form.Label className= 'px-2' >Your Short URL</Form.Label><span className={`bg-gray-500 px-10 mx-5 border-2 ${triggerVariable ? "opacity-0" : "opacity-1"}`}>Try another value</span></div>
+                        
                         <div className='flex '><span className="input-group-text bg-gray-500">minilinkit.com/</span>
+                        
                         <Form.Control type="" placeholder="eg. 3h6fsB (Optional)" value={short}
                     onChange={(e) => setShort(e.target.value)}/></div>
-                        
                     </Form.Group>
 
                     <Button className="mb-5 bg-blue-600" variant="primary" type="button" onClick={Push}>
