@@ -60,15 +60,24 @@ const ShortUrl = () => {
 
             if ([short] in dict){ 
                 
-                console.log('present')
+                // console.log('present')
                 document.getElementById("error").style.display= '';}
                 
             else{
                 
                 dict[[short]] = long;
-                console.log('unique')
+                // console.log('unique')
                 set(ref(db,'urlapp'),dict).catch(alert);
                 document.getElementById("error").style.display= 'none';
+
+                var copyText = document.getElementById("shorturl");
+
+                // Select the text field
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); // For mobile devices
+
+                // Copy the text inside the text field
+                navigator.clipboard.writeText(fullUrl + "/" + copyText.value);
 
             }
             
@@ -99,7 +108,7 @@ const ShortUrl = () => {
                         
                         <div className='flex '><span textContent='test' className="input-group-text bg-gray-500">{fullUrl}</span>
                         
-                        <Form.Control type="" placeholder="eg. 3h6fsB (Optional)" value={short}
+                        <Form.Control id="shorturl" type="" placeholder="eg. 3h6fsB (Optional)" value={short}
                     onChange={(e) => setShort(e.target.value)}/></div>
                     </Form.Group>
 
