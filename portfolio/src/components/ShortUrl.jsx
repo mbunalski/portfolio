@@ -104,9 +104,9 @@ const ShortUrl = () => {
 
                     
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <div><Form.Label className= 'px-2' >Your Short URL</Form.Label><span id='error' className='bg-gray-500 px-10 mx-5 border-2'>Try another value</span></div>
+                        <div><Form.Label className= 'px-2' >Your Short URL</Form.Label><span id='error' style={{display:"none"}} className='display-hidden bg-gray-500 px-10 mx-5 border-2'>Try another value</span></div>
                         
-                        <div className='flex '><span textContent='test' className="input-group-text bg-gray-500">{fullUrl}</span>
+                        <div className='flex '><span  className="input-group-text bg-gray-500">{fullUrl}</span>
                         
                         <Form.Control id="shorturl" type="" placeholder="eg. 3h6fsB (Optional)" value={short}
                     onChange={(e) => setShort(e.target.value)}/></div>
