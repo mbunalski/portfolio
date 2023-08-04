@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { db } from "../utils/firebase";
 import { getDatabase, ref, set, child, get  } from "firebase/database";
+import $ from 'jquery'
 
 
 
@@ -33,10 +34,12 @@ const ShortUrl = () => {
     // Push Function
 
 
-    const triggerVariable = false
+    let fullUrl = window.location.href
 
 
     const Push = () => {
+        
+        
         var dict = {}
         let snap;
         get(child(dbRef, `urlapp`)).then((snapshot) => {
@@ -54,10 +57,22 @@ const ShortUrl = () => {
         }).catch((error) => {
             console.error(error);
         }).then(() => {
-            dict[[short]] = long;
-            // console.log('l2')
-            // console.log(dict)
-            set(ref(db,'urlapp'),dict).catch(alert);
+
+            if ([short] in dict){ 
+                
+                console.log('present')
+                document.getElementById("error").style.display= '';}
+                
+            else{
+                
+                dict[[short]] = long;
+                console.log('unique')
+                set(ref(db,'urlapp'),dict).catch(alert);
+                document.getElementById("error").style.display= 'none';
+
+            }
+            
+            
         }
         );
         
@@ -69,7 +84,7 @@ const ShortUrl = () => {
         
         <div className='w-full h-screen bg-[#0a192f] text-black'>
             <div className='flex flex-col justify-center items-center w-full h-full'>
-                <div className= 'rounded shadow-md shadow-[#040c16] bg-teal-200 w-[500px] h-[500px] flex flex-col justify-center items-center'>
+                <div  className= 'rounded shadow-md shadow-[#040c16] bg-teal-200 w-[500px] h-[500px] flex flex-col justify-center items-center'>
                 
                 <Form className='font-bold'>
                     <Form.Group className="mb-5" controlId="formBasicEmail">
@@ -80,9 +95,9 @@ const ShortUrl = () => {
 
                     
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <div><Form.Label className= 'px-2' >Your Short URL</Form.Label><span className={`bg-gray-500 px-10 mx-5 border-2 ${triggerVariable ? "opacity-0" : "opacity-1"}`}>Try another value</span></div>
+                        <div><Form.Label className= 'px-2' >Your Short URL</Form.Label><span id='error' className='bg-gray-500 px-10 mx-5 border-2'>Try another value</span></div>
                         
-                        <div className='flex '><span className="input-group-text bg-gray-500">minilinkit.com/</span>
+                        <div className='flex '><span textContent='test' className="input-group-text bg-gray-500">{fullUrl}</span>
                         
                         <Form.Control type="" placeholder="eg. 3h6fsB (Optional)" value={short}
                     onChange={(e) => setShort(e.target.value)}/></div>
