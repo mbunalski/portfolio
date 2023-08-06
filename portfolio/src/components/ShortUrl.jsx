@@ -7,11 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { db } from "../utils/firebase";
 import { getDatabase, ref, set, child, get  } from "firebase/database";
 import $ from 'jquery'
+import { nanoid } from 'nanoid'
 
 
 
 const ShortUrl = () => {
 
+    var generatedKey = nanoid(5);
     const [long, setLong] = useState();
     const [short, setShort] = useState();
  
@@ -38,8 +40,11 @@ const ShortUrl = () => {
 
 
     const Push = () => {
-        
-        
+        var value = document.getElementById("shorturl").value;
+        if (isNaN(value)) {
+            console.log('wammy')
+        }
+        console.log(value)
         var dict = {}
         let snap;
         get(child(dbRef, `urlapp`)).then((snapshot) => {
