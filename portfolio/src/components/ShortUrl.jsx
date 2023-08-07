@@ -62,56 +62,51 @@ const ShortUrl = () => {
             if (value==="") {
                 setShort(generatedKey)
                 if ([generatedKey] in dict){ 
-                
-                    // console.log('present')
-                    document.getElementById("error").style.display= '';}
-                    
+                    document.getElementById("error").style.display= '';}  
                 else{
-                    
-                    dict[generatedKey] = long;
-                    console.log('unique')
-                    console.log(dict)
+                    if (long.substring(0,4) ==='http'){
+                        console.log('contains http to start')
+                        dict[generatedKey] = long;
+                    }else if (long.substring(0,3) ==='www'){
+                        console.log('contains www to start')
+                        dict[generatedKey] = 'https://' + long;
+                    }else{
+                        console.log('nothing')
+                        console.log(long.substring(0,3))
+                        dict[generatedKey] = 'https://www.' + long;
+                    }
+                    console.log('got to the writing part')
+                    console.log(dict[generatedKey])
                     set(ref(db,'urlapp'),dict).catch(alert);
                     document.getElementById("error").style.display= 'none';
-    
                     var copyText = generatedKey;
-    
-    
-                    // Copy the text inside the text field
                     navigator.clipboard.writeText(fullUrl + "/" + copyText);
                                 
                 }
 
-
-
-
-                
             }else{
-
-
-            if ([short] in dict){ 
-                
-                // console.log('present')
-                document.getElementById("error").style.display= '';}
-                
-            else{
-                
-                dict[short] = long;
-                console.log('unique')
-                console.log(dict)
-                set(ref(db,'urlapp'),dict).catch(alert);
-                document.getElementById("error").style.display= 'none';
-
-                var copyText = document.getElementById("shorturl");
-
-                // Select the text field
-                copyText.select();
-                copyText.setSelectionRange(0, 99999); // For mobile devices
-
-                // Copy the text inside the text field
-                navigator.clipboard.writeText(fullUrl + "/" + copyText.value);
-                            
-            }
+                if ([short] in dict){           
+                    document.getElementById("error").style.display= '';}             
+                else{
+                    if (long.substring(0,4) ==='http'){
+                        console.log('contains http to start')
+                        dict[short] = long;
+                    }else if (long.substring(0,3) ==='www'){
+                        console.log('contains www to start')
+                        dict[short] = 'https://' + long;
+                    }else{
+                        console.log('nothing')
+                        console.log(long.substring(0,3))
+                        dict[short] = 'https://www.' + long;
+                    } 
+                    set(ref(db,'urlapp'),dict).catch(alert);
+                    document.getElementById("error").style.display= 'none';
+                    var copyText = document.getElementById("shorturl");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999);
+                    navigator.clipboard.writeText(fullUrl + "/" + copyText.value);        
+                }
+                    
             }
             
             
