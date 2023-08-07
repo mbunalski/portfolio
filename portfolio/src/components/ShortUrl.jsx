@@ -20,24 +20,8 @@ const ShortUrl = () => {
 
 
     const dbRef = ref(getDatabase());
-    // const Pull = () => {
-    
-    // get(child(dbRef, `urlapp`)).then((snapshot) => {
-    //     if (snapshot.exists()) {
-    //     console.log(snapshot.val());
-    //     } else {
-    //     console.log("No data available");
-    //     }
-    // }).catch((error) => {
-    //     console.error(error);
-    // });
-    // }   
-
-    // Push Function
-
 
     let fullUrl = window.location.href
-
 
     const Push = () => {
         var value = document.getElementById("shorturl").value;
@@ -47,11 +31,9 @@ const ShortUrl = () => {
             if (snapshot.exists()) {
                 
                 snapshot.forEach((child) => {
-                    dict[child.key] = child.val();
-                    
+                    dict[child.key] = child.val();               
                 }); 
-                // console.log('l1')
-                // console.log(dict)
+ 
             } else {
                 console.log("No data available");
             }
@@ -145,7 +127,13 @@ const ShortUrl = () => {
                     </Button>
 
                     
+
+                    
                 </Form>
+
+                <Button className="mb-5 bg-gray-600" variant="primary" type="button" href="https://github.com/mbunalski/portfolio/blob/main/portfolio/src/components/ShortUrl.jsx">
+                    Code
+                </Button>
                 
                 </div>
             </div>
