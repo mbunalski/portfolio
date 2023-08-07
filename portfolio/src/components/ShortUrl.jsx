@@ -41,10 +41,6 @@ const ShortUrl = () => {
 
     const Push = () => {
         var value = document.getElementById("shorturl").value;
-        if (isNaN(value)) {
-            console.log('wammy')
-        }
-        console.log(value)
         var dict = {}
         let snap;
         get(child(dbRef, `urlapp`)).then((snapshot) => {
@@ -63,6 +59,36 @@ const ShortUrl = () => {
             console.error(error);
         }).then(() => {
 
+            if (value==="") {
+                setShort(generatedKey)
+                if ([generatedKey] in dict){ 
+                
+                    // console.log('present')
+                    document.getElementById("error").style.display= '';}
+                    
+                else{
+                    
+                    dict[generatedKey] = long;
+                    console.log('unique')
+                    console.log(dict)
+                    set(ref(db,'urlapp'),dict).catch(alert);
+                    document.getElementById("error").style.display= 'none';
+    
+                    var copyText = generatedKey;
+    
+    
+                    // Copy the text inside the text field
+                    navigator.clipboard.writeText(fullUrl + "/" + copyText);
+                                
+                }
+
+
+
+
+                
+            }else{
+
+
             if ([short] in dict){ 
                 
                 // console.log('present')
@@ -70,8 +96,9 @@ const ShortUrl = () => {
                 
             else{
                 
-                dict[[short]] = long;
-                // console.log('unique')
+                dict[short] = long;
+                console.log('unique')
+                console.log(dict)
                 set(ref(db,'urlapp'),dict).catch(alert);
                 document.getElementById("error").style.display= 'none';
 
@@ -83,7 +110,8 @@ const ShortUrl = () => {
 
                 // Copy the text inside the text field
                 navigator.clipboard.writeText(fullUrl + "/" + copyText.value);
-
+                            
+            }
             }
             
             
