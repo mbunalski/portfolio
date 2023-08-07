@@ -126,15 +126,11 @@ const ShortUrl = () => {
                         <Form.Control id="shorturl" type="" placeholder="eg. 3h6fsB (Optional)" value={short}
                     onChange={(e) => setShort(e.target.value)}/></div>
                     </Form.Group>
+                </Form>
 
-                    <Button className="mb-5 bg-blue-600" variant="primary" type="button" onClick={Push}>
+                <Button className="mb-5 bg-blue-600" variant="primary" type="button" onClick={Push}>
                         Copy URL
                     </Button>
-
-                    
-
-                    
-                </Form>
 
                 <Button className="mb-5 bg-gray-600" variant="primary" type="button" href="https://github.com/mbunalski/portfolio/blob/main/portfolio/src/components/ShortUrl.jsx">
                     Code
