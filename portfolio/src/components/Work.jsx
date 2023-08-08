@@ -1,6 +1,7 @@
 import React from 'react'
 import Empty from '../assets/suchempty.jpg'
 import ComingSoon from '../assets/comingsoon.jpg'
+import URLShortener from '../assets/urlshortener.jpg'
 
 
 const Work = () => {
@@ -18,7 +19,7 @@ const Work = () => {
             <div className= 'px-8 lg:px-20 grid sm:grid-cls-2 md:grid-cols-3 gap-4'>
 
             {/*Grid Item*/}
-                <div style={{backgroundImage: `url(${ComingSoon})`}}
+                <div style={{backgroundImage: `url(${URLShortener})`}}
                  className='parent shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
 
                 {/*hover efects*/}
