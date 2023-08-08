@@ -11,6 +11,7 @@ import ShortUrl from './components/ShortUrl.jsx';
 
 import { db } from "./utils/firebase";
 import { getDatabase, ref, set, child, get  } from "firebase/database";
+import NavBar from './components/NavBar.jsx';
 
 // function App() {
 // return (
@@ -94,7 +95,7 @@ class App extends Component {
                             }/>
                         <Route path="/url"
                             element={
-                                <><Navigationbar/><ShortUrl/></>
+                                <><NavBar/><ShortUrl/></>
                             }/>
                         <Route path="/contact"
                             element={<Contact/>}/>
