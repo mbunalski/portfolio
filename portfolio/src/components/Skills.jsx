@@ -6,6 +6,7 @@ import JavaScript from '../assets/javascript.png'
 import ReactImg from '../assets/react.png'
 import Java from '../assets/java.png'
 import Python from '../assets/python.png'
+import Firebase from '../assets/firebase.png'
 
 
 
@@ -27,16 +28,16 @@ const Skills = () => {
             <p className='my-4'>Python</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto'  src={Java} alt="Java Icon" />
-            <p className='my-4'>Java</p>
-          </div>
-          <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
             <img className='w-20 mx-auto'  src={JavaScript} alt="JavaScript Icon" />
             <p className='my-4'>JavaScript</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
             <img className='w-20 mx-auto'  src={ReactImg} alt="React Icon" />
             <p className='my-4'>React</p>
+          </div>
+          <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+            <img className='w-20 mx-auto'  src={Firebase} alt="Java Icon" />
+            <p className='my-4'>Firebase</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
             <img className='w-20 mx-auto'  src={Selenium} alt="Selenium Icon" />
