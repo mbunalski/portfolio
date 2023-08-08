@@ -17,7 +17,7 @@ const Navigationbar = () => {
         
             <ul className='hidden md:flex'>
                 <li>
-                    <Link to="home" smooth={true}  duration={500}>
+                    <Link to="home"  smooth={true}  duration={500}>
                     Home
                     </Link>
                 </li>
