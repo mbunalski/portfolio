@@ -32,7 +32,7 @@ const Work = () => {
                             <a href="/url">
                                 <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a href="/">
+                            <a href="https://github.com/mbunalski/portfolio/blob/main/portfolio/src/components/ShortUrl.jsx">
                                 <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                             
