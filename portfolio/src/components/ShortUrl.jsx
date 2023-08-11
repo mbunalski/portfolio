@@ -104,11 +104,11 @@ const ShortUrl = () => {
         <div className='w-full h-screen bg-[#0a192f] text-black'>
             <div className='flex flex-col justify-center items-center w-full h-full'>
 
-            <div className='text-gray-400 w-[500px] rounded-2xl border-[#5cf300] border-3 font-bold py-3 px-2 my-2'>This application uses bootstrap, 
+            <div className='text-gray-400 w-full sm:w-[500px] rounded-2xl border-[#5cf300] border-3 font-bold py-3 px-2 my-2'>This application uses bootstrap, 
             react, and firebase. It takes a long clumsy url and shortens it to a sub url of this page. Value are saved and read from a firebase realtime database. To use it, enter a url you want to shorten
             and the value you want as the last digits. Select Copy URL and your new link will redirect to you the long url.</div>
                 
-                <div  className= 'rounded-2xl shadow-md shadow-[#040c16] bg-teal-200 w-[500px] h-[500px] flex flex-col justify-center items-center'>
+                <div  className= 'rounded-2xl shadow-md shadow-[#040c16] bg-teal-200 w-full sm:w-[500px] h-[500px] flex flex-col justify-center items-center'>
                 
                 <Form className='font-bold'>
                     <Form.Group className="mb-5" controlId="formBasicEmail">
