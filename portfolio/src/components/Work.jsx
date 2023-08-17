@@ -2,6 +2,7 @@ import React from 'react'
 import Empty from '../assets/suchempty.jpg'
 import ComingSoon from '../assets/comingsoon.jpg'
 import URLShortener from '../assets/urlshortener.jpg'
+import Lemonade from '../assets/lemonade.jpg'
 
 
 const Work = () => {
@@ -41,19 +42,19 @@ const Work = () => {
                 </div>
 
                 {/*Grid Item*/}
-                <div style={{backgroundImage: `url(${ComingSoon})`}}
+                <div style={{backgroundImage: `url(${Lemonade})`}}
                  className='parent shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
 
                 {/*hover efects*/}
                     <div className='child'>
                         <span clasName='text-2xl font-bold text-white tracking-wider'>
-                            TBD
+                            Lemonade App (Android Tutorial)
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a href="https://developer.android.com/courses/android-basics-kotlin/unit-1">
                                 <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a href="/">
+                            <a href="https://github.com/mbunalski/mobilecourse/tree/main/Lemonade">
                                 <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                             
