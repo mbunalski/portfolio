@@ -3,6 +3,7 @@ import Empty from '../assets/suchempty.jpg'
 import ComingSoon from '../assets/comingsoon.jpg'
 import URLShortener from '../assets/urlshortener.jpg'
 import Lemonade from '../assets/lemonade.jpg'
+import TipTime from '../assets/tiptime.jpg'
 
 
 const Work = () => {
@@ -62,20 +63,20 @@ const Work = () => {
                     </div>
                 </div>
 
-                            {/*Grid Item*/}
-                            <div style={{backgroundImage: `url(${ComingSoon})`}}
+                {/*Grid Item*/}
+                <div style={{backgroundImage: `url(${TipTime})`}}
                  className='parent shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
 
                 {/*hover efects*/}
                     <div className='child'>
                         <span clasName='text-2xl font-bold text-white tracking-wider'>
-                            TBD
+                            Tipping App (Android Tutorial)
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a href="https://developer.android.com/courses/pathways/android-basics-kotlin-unit-2-pathway-1">
                                 <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a href="/">
+                            <a href="https://github.com/mbunalski/mobilecourse/tree/main/TipTime">
                                 <button className='text-center round-leg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                             
