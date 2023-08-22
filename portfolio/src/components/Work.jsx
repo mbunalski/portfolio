@@ -49,7 +49,7 @@ const Work = () => {
                 {/*hover efects*/}
                     <div className='child'>
                         <span clasName='text-2xl font-bold text-white tracking-wider'>
-                            Lemonade App (Android Tutorial)
+                            Lemonade Application (Android Tutorial)
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="https://developer.android.com/courses/android-basics-kotlin/unit-1">
@@ -70,7 +70,7 @@ const Work = () => {
                 {/*hover efects*/}
                     <div className='child'>
                         <span clasName='text-2xl font-bold text-white tracking-wider'>
-                            Tipping App (Android Tutorial)
+                            Tipping Application (Android Tutorial)
                         </span>
                         <div className='pt-8 text-center'>
                             <a href="https://developer.android.com/courses/pathways/android-basics-kotlin-unit-2-pathway-1">
