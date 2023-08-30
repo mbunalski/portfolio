@@ -8,6 +8,7 @@ import Skills from "./components/Skills.jsx";
 import Work from "./components/Work.jsx";
 import Contact from "./components/Contact.jsx";
 import ShortUrl from './components/ShortUrl.jsx';
+import Academic from './components/Academic.jsx';
 
 import { db } from "./utils/firebase";
 import { getDatabase, ref, set, child, get  } from "firebase/database";
@@ -91,7 +92,7 @@ class App extends Component {
                     <Routes>
                         <Route path="/"
                             element={
-                                <><Navigationbar/><Home/><About/><Skills/><Work/><Contact/></>
+                                <><Navigationbar/><Home/><About/><Academic/><Skills/><Work/><Contact/></>
                             }/>
                         <Route path="/url"
                             element={
