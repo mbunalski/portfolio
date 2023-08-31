@@ -21,7 +21,31 @@ export const Academic = () => {
               </p>
             </div>
             <div>
-              <p className='font-bold'>Class 1</p>
+              <p className='font-bold'>6200</p>
+              <p>Project</p>
+              <p>knowledge</p>
+              <p className='font-bold'>6242</p>
+              <p>Project</p>
+              <p>knowledge</p>
+              <p className='font-bold'>6035</p>
+              <p>Project</p>
+              <p>knowledge</p>
+              <p className='font-bold'>6300</p>
+              <p>Project</p>
+              <p>knowledge</p>
+              <p className='font-bold'>6476</p>
+              <p>Project</p>
+              <p>knowledge</p>
+              <p className='font-bold'>6750</p>
+              <p>Project</p>
+              <p>knowledge</p>
+              <p className='font-bold'>7637</p>
+              <p>Project</p>
+              <p>knowledge</p>
+              <p className='font-bold'>7641</p>
+              <p>Project</p>
+              <p>knowledge</p>
+              <p className='font-bold'>7646</p>
               <p>Project</p>
               <p>knowledge</p>
             </div>
