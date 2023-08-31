@@ -21,31 +21,31 @@ export const Academic = () => {
               </p>
             </div>
             <div>
-              <p className='font-bold'>6200</p>
+              <p className='font-bold'>6200 - Introduction to Operating Systems</p>
               <p>Project</p>
               <p>knowledge</p>
-              <p className='font-bold'>6242</p>
+              <p className='font-bold'>6242 - Data and Visual Analytics</p>
               <p>Project</p>
               <p>knowledge</p>
-              <p className='font-bold'>6035</p>
+              <p className='font-bold'>6035 - Introduction to Information Security</p>
               <p>Project</p>
               <p>knowledge</p>
-              <p className='font-bold'>6300</p>
+              <p className='font-bold'>6300 - Software Development Process</p>
               <p>Project</p>
               <p>knowledge</p>
-              <p className='font-bold'>6476</p>
+              <p className='font-bold'>6476 - Computer Vision</p>
               <p>Project</p>
               <p>knowledge</p>
-              <p className='font-bold'>6750</p>
+              <p className='font-bold'>6750 - Human-Computer Interaction</p>
               <p>Project</p>
               <p>knowledge</p>
-              <p className='font-bold'>7637</p>
+              <p className='font-bold'>7637 - Knowledge-Based Artificial Intelligence - Cognitive Systems</p>
               <p>Project</p>
               <p>knowledge</p>
-              <p className='font-bold'>7641</p>
+              <p className='font-bold'>7641 - Machine Learning</p>
               <p>Project</p>
               <p>knowledge</p>
-              <p className='font-bold'>7646</p>
+              <p className='font-bold'>7646 - Machine Learning for Trading</p>
               <p>Project</p>
               <p>knowledge</p>
             </div>
