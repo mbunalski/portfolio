@@ -14,41 +14,62 @@ export const Academic = () => {
           </div>
           <div className='max-w-[1000px] w-full grid gap-8 px-4'>
             {/*Container*/}
-            <div className=' text-xl font-bold'>
+            <div className='max-w-[1000px] w-full grid gap-8 px-4 text-xl font-bold'>
               <p>I am attedning Georgia Insitute of Technology and prusuing a master's degree in Computer Science.I am planning to graduate in May 2024. 
                 My degree has a concentration in both Machine Learning and Interactive Intelligence. Below you will see the classes I have taken and 
                 notable projects completed or knowledge gained.
               </p>
             </div>
-            <div>
-              <p className='font-bold'>6200 - Introduction to Operating Systems</p>
-              <p>Project</p>
-              <p>knowledge</p>
-              <p className='font-bold'>6242 - Data and Visual Analytics</p>
-              <p>Project</p>
-              <p>knowledge</p>
-              <p className='font-bold'>6035 - Introduction to Information Security</p>
-              <p>Project</p>
-              <p>knowledge</p>
-              <p className='font-bold'>6300 - Software Development Process</p>
-              <p>Project</p>
-              <p>knowledge</p>
-              <p className='font-bold'>6476 - Computer Vision</p>
-              <p>Project</p>
-              <p>knowledge</p>
-              <p className='font-bold'>6750 - Human-Computer Interaction</p>
-              <p>Project</p>
-              <p>knowledge</p>
-              <p className='font-bold'>7637 - Knowledge-Based Artificial Intelligence - Cognitive Systems</p>
-              <p>Project</p>
-              <p>knowledge</p>
-              <p className='font-bold'>7641 - Machine Learning</p>
-              <p>Project</p>
-              <p>knowledge</p>
-              <p className='font-bold'>7646 - Machine Learning for Trading</p>
-              <p>Project</p>
-              <p>knowledge</p>
+            <div className='px-8 lg:px-20 w-full grid grid-cols-2 gap-4 text-center py-8'>
+
+              <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-500'>
+                <p className='font-bold'>6200 - Introduction to Operating Systems</p>
+                <p>Project</p>
+                <p>knowledge</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-500'>
+                <p className='font-bold'>6242 - Data and Visual Analytics</p>
+                <p>Project</p>
+                <p>knowledge</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-500'>
+                <p className='font-bold'>6035 - Introduction to Information Security</p>
+                <p>Project</p>
+                <p>knowledge</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-500'>
+                <p className='font-bold'>6300 - Software Development Process</p>
+                <p>Project</p>
+                <p>knowledge</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-500'>
+                <p className='font-bold'>6476 - Computer Vision</p>
+                <p>Project</p>
+                <p>knowledge</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-500'>
+                <p className='font-bold'>6750 - Human-Computer Interaction</p>
+                <p>Project</p>
+                <p>knowledge</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-500'>
+                <p className='font-bold'>7637 - Knowledge-Based Artificial Intelligence - Cognitive Systems</p>
+                <p>Project</p>
+                <p>knowledge</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-500'>
+                <p className='font-bold'>7641 - Machine Learning</p>
+                <p>Project</p>
+                <p>knowledge</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-105 duration-500'>
+                <p className='font-bold'>7646 - Machine Learning for Trading</p>
+                <p>Project</p>
+                <p>knowledge</p>
+              </div>
+
             </div>
+
           </div>
       </div>
     </div>
