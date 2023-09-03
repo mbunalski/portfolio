@@ -8,7 +8,7 @@ export const Home = () => {
         
         {/*Container*/}
         <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-          <h1 className='text-4xl sm:text-7xl font-bold text-[#5cf300]'>This Site and all projects are currently under construction.</h1>
+          <h1 className='text-4xl sm:text-8xl font-bold text-[#5cf300]'>This Site and all projects are currently under construction.</h1>
             <p className='text-[#5cf300]'>Hi, my name is</p>
             <h1 className='text-4xl sm:text-7xl font-bold text-gray-100'>Michael Bunalski</h1>
             <h2 className='text-4xl sm:text-7xl text-gray-400'>I'm a Software Engineer</h2>
